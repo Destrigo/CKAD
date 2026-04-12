@@ -1,0 +1,7 @@
+use when kubernetes installed
+
+kubectl get pods
+
+kubectl create -f pod-definition.yml
+kubectl get pods
+
