@@ -1,0 +1,11 @@
+kubectl get pods
+kubectl get pods --namespace=placeholder
+
+kubectl create -f pod-definition.yml --namespace=dev
+ or in metadata put namespace: placeholder
+
+
+kubectl create -f namespace-definition.yml or
+kubectl create namespace placeholder
+
+kubectl get pods --all-namespace 

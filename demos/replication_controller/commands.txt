@@ -1,0 +1,5 @@
+use when kubernetes installed
+
+
+kubectl create -f rc-definition.yml
+kubectl get replicationcontroller

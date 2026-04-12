@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myapp
+  labels:
+    app: myapp
+    type: front-end
+spec:
+  template: #pod specs to duplicate
+
+    metadata:
+      name: myapp Pod
+      labels:
+        app: myapp
+        placeholder_anylabel: location
+
+    spec:
+      containers:
+        - name: nginx-container
+          image: nginx
+
+        - name: second container
+          image: redis
+  replicas: 3 #how many replicas
+  selector: #replicasets can manage by the selector even if the pods are not created by them
+    matchLabels:
+      type: front-end

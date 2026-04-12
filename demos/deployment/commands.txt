@@ -1,0 +1,5 @@
+kubectl create -f deployment-definition.yml
+kubectl get deployments
+kubectl get replycaset
+
+kubectl get all
