@@ -1,0 +1,5 @@
+docker run --name ubuntu-sleeper ubuntu-sleeper
+
+docker run --name ubuntu-sleeper ubuntu-sleeper 10
+
+docke run --name ubuntu-sleeper --entrypoint sleep2.0 ubuntu-sleeper2.0

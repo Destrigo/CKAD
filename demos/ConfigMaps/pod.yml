@@ -1,0 +1,23 @@
+spec:
+  containers:
+    - name: asd
+      image: asd
+      ports:
+        - conteinerPort: 8080
+      envFrom:
+        -configMapRef:
+          name: app-configmap
+
+
+volumes:
+  - name: app
+    configMap:
+      name: app-configMap
+
+
+env:
+  - name: APP_COLOR
+    valueFrom:
+      configMapKeyRef:
+        name: app-configMap
+        key: APP_COLOR
