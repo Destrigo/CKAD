@@ -1,0 +1,18 @@
+kubectl create serviceaccount dashboard-sa 
+kubectl get serviceaccount
+
+it creates the object
+then the token
+then a secret object storing the token
+
+
+kubectl create token dashboard-sa #this has an expiry date
+
+
+kubectl describe serviceaccount dashboard-ca 
+kubectl describe secret dashboard-sa-token
+
+
+kubectl get pods -o yaml | grep serviceAccountName
+
+kubectl patch serviceaccount web-dashboard -p '{"automountServiceAccountToken": false}'

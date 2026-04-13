@@ -1,0 +1,3 @@
+kubectl taint nodes nodename key=value:taint-effect
+
+kubectl taint nodes node1 app=myapp:NoSchedule
