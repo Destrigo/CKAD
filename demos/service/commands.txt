@@ -1,0 +1,2 @@
+kubectl create -f service-definition.yml
+kubectl get services
