@@ -1,0 +1,2 @@
+the kube server needs to have this encryption configuration to know what to do and how.
+map it inside the server configuration with its own flag
