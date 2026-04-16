@@ -1,0 +1,10 @@
+paiVersion: v1
+kind: PPersistentVolumeClaim
+metadata:
+  name: myclaim
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 500Mi
