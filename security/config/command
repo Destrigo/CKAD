@@ -1,0 +1,8 @@
+/.kube/config
+--kubeconfig config
+clusters + contexts + users
+
+
+kubectl config -h
+kubectl config view
+kubectl config use-context prod-user@production

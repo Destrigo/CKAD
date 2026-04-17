@@ -1,0 +1,6 @@
+kubectl describe rolebinding rolename
+kubectl get roles
+kuebctl get rolebindings
+
+kubectl auth can-i create deployments
+kubectl auth can-i delete nodes --as dev-user

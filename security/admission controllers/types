@@ -1,0 +1,6 @@
+alwaysPullImages
+DefaultStorageClass
+EventRateLimit
+NamespaceExists
+
+kube-apiserver -h | grep enable-admission-plugins
