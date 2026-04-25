@@ -1,0 +1,16 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - api/test1.yaml
+  - api/test2.yaml
+  - cache/test1.yaml
+  - cache/test2.yaml
+  - db/test1.yaml
+  - db/test2.yaml
+
+
+  or
+  - api/
+  - cache/
+  - db/
